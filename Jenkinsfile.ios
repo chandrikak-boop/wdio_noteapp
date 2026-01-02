@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
+        // Use NodeJS 20 installed in Jenkins
         NODEJS_HOME = tool name: 'node20', type: 'NodeJS'
         PATH = "${env.NODEJS_HOME}/bin:${env.PATH}"
-        ANDROID_HOME = '/Users/testvagranttechnologies/Library/Android/sdk' // optional if not needed
     }
 
     stages {
@@ -27,6 +27,21 @@ pipeline {
             }
         }
 
+        stage('Boot iOS Simulator') {
+            steps {
+                sh '''
+                # List available simulators
+                xcrun simctl list devices
+                
+                # Boot a specific simulator, replace with the device you want
+                xcrun simctl boot "iPhone 16" || echo "Simulator already booted"
+                
+                # Optional: set status bar so tests look consistent
+                xcrun simctl status_bar "iPhone 16" override --battery 100 --wifiBars 3 --cellularBars 4
+                '''
+            }
+        }
+
         stage('Run WDIO iOS Tests') {
             steps {
                 sh 'npx wdio config/wdio.ios.conf.ts'
@@ -36,6 +51,7 @@ pipeline {
 
     post {
         always {
+            // Archive XML reports if any
             archiveArtifacts artifacts: '**/reports/*.xml', allowEmptyArchive: true
             junit '**/reports/*.xml'
         }
