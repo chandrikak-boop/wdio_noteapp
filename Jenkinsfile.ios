@@ -47,7 +47,7 @@ pipeline {
                 nvm use 20.19.0
 
                 # Run your WDIO tests
-                npx wdio run wdio.ios.conf.js
+                npx wdio config/wdio.ios.conf.js
                 '''
             }
         }
