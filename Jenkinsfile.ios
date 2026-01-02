@@ -1,68 +1,66 @@
 pipeline {
     agent any
 
-    environment {
-        ANDROID_HOME = '/Users/testvagranttechnologies/Library/Android/sdk' // optional
-        NODE_VERSION = '20.19.0' // NodeJS version
-    }
-
     stages {
-
         stage('Checkout SCM') {
             steps {
                 checkout scm
             }
         }
 
-        stage('Install NodeJS') {
+        stage('Setup Node & Install Dependencies') {
             steps {
-                // Install nvm if not present, then install NodeJS
                 sh '''
-                if [ -z "$NVM_DIR" ]; then
-                  export NVM_DIR="$HOME/.nvm"
-                  mkdir -p "$NVM_DIR"
-                  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-                fi
+                # Load NVM
                 export NVM_DIR="$HOME/.nvm"
                 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-                nvm install ${NODE_VERSION}
-                nvm use ${NODE_VERSION}
+
+                # Install & use NodeJS v20.19.0
+                nvm install 20.19.0
+                nvm use 20.19.0
+
+                # Verify Node & npm
                 node -v
                 npm -v
-                '''
-            }
-        }
 
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
+                # Install project dependencies
+                npm install
+                '''
             }
         }
 
         stage('Verify Xcode') {
             steps {
-                sh 'xcode-select -p'
-                sh 'xcodebuild -version'
+                sh '''
+                # Add any Xcode verification commands if needed
+                xcodebuild -version
+                '''
             }
         }
 
         stage('Run WDIO iOS Tests') {
             steps {
-                sh 'npx wdio config/wdio.ios.conf.ts'
+                sh '''
+                # Make sure Node & npm are available in this shell too
+                export NVM_DIR="$HOME/.nvm"
+                [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+                nvm use 20.19.0
+
+                # Run your WDIO tests
+                npx wdio run wdio.ios.conf.js
+                '''
             }
         }
     }
 
     post {
         always {
-            archiveArtifacts artifacts: '**/reports/*.xml', allowEmptyArchive: true
-            junit '**/reports/*.xml'
+            junit 'reports/**/*.xml'
+            archiveArtifacts artifacts: '**/screenshots/*.png', allowEmptyArchive: true
         }
+
         failure {
             echo 'iOS tests failed!'
-        }
-        success {
-            echo 'iOS tests passed successfully!'
         }
     }
 }
