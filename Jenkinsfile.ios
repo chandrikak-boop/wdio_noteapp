@@ -2,10 +2,8 @@ pipeline {
     agent any
 
     environment {
-        // Use the NodeJS installation you added in Jenkins
-        NODEJS_HOME = tool name: 'node20', type: 'NodeJS'
-        PATH = "${env.NODEJS_HOME}/bin:${env.PATH}"
-        ANDROID_HOME = '/Users/testvagranttechnologies/Library/Android/sdk' // optional, can skip for pure iOS
+        ANDROID_HOME = '/Users/testvagranttechnologies/Library/Android/sdk' // optional
+        NODE_VERSION = '20.19.0' // NodeJS version
     }
 
     stages {
@@ -16,10 +14,28 @@ pipeline {
             }
         }
 
+        stage('Install NodeJS') {
+            steps {
+                // Install nvm if not present, then install NodeJS
+                sh '''
+                if [ -z "$NVM_DIR" ]; then
+                  export NVM_DIR="$HOME/.nvm"
+                  mkdir -p "$NVM_DIR"
+                  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+                fi
+                export NVM_DIR="$HOME/.nvm"
+                [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+                nvm install ${NODE_VERSION}
+                nvm use ${NODE_VERSION}
+                node -v
+                npm -v
+                '''
+            }
+        }
+
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
-                // or 'npm ci' if your package-lock.json is in sync
             }
         }
 
@@ -39,7 +55,6 @@ pipeline {
 
     post {
         always {
-            // archive test reports (JUnit XML format)
             archiveArtifacts artifacts: '**/reports/*.xml', allowEmptyArchive: true
             junit '**/reports/*.xml'
         }
