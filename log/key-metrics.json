@@ -338,5 +338,85 @@
         "success": true,
         "failure": null,
         "worker": 22300
+    },
+    {
+        "name": "sdk:testhub",
+        "entryType": "measure",
+        "startTime": 224.73495799303055,
+        "duration": 998.145249992609,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": 97901
+    },
+    {
+        "name": "sdk:percy",
+        "entryType": "measure",
+        "startTime": 1227.2449579834938,
+        "duration": 0.298334002494812,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": 97901
+    },
+    {
+        "name": "sdk:automate:local",
+        "entryType": "measure",
+        "startTime": 1227.6457499861717,
+        "duration": 0.35625001788139343,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": 97901
+    },
+    {
+        "name": "sdk:automate:print-buildlink",
+        "entryType": "measure",
+        "startTime": 2543.2386669814587,
+        "duration": 715.3930000066757,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": 97901
+    },
+    {
+        "name": "sdk:testhub",
+        "entryType": "measure",
+        "startTime": 230.01854100823402,
+        "duration": 874.6362499892712,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": 98195
+    },
+    {
+        "name": "sdk:percy",
+        "entryType": "measure",
+        "startTime": 1109.5418330132961,
+        "duration": 0.3174999952316284,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": 98195
+    },
+    {
+        "name": "sdk:automate:local",
+        "entryType": "measure",
+        "startTime": 1109.99095800519,
+        "duration": 0.3807919919490814,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": 98195
+    },
+    {
+        "name": "sdk:automate:print-buildlink",
+        "entryType": "measure",
+        "startTime": 2425.2748750150204,
+        "duration": 817.1134579777718,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": 98195
     }
 ]

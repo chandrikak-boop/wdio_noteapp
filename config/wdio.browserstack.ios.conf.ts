@@ -5,7 +5,7 @@ import {config} from './wdio.conf.js';
  config.user=process.env.BROWSERSTACK_USER
  config.key=process.env.BROWSERSTACK_KEY
     config.specs = [
-            'test/specs/android/addNote.spec.js'
+            'test/specs/list_ios.spec.ts'
         ]
    
     config.capabilities= [{
