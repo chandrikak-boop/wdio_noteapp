@@ -53,14 +53,15 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            junit 'reports/**/*.xml'
-            archiveArtifacts artifacts: '**/screenshots/*.png', allowEmptyArchive: true
-        }
-
-        failure {
-            echo 'iOS tests failed!'
-        }
+   post {
+    always {
+        junit 'reports/junit/*.xml'
+        archiveArtifacts artifacts: '**/screenshots/*.png', allowEmptyArchive: true
     }
+
+    failure {
+        echo 'iOS tests failed!'
+    }
+}
+
 }
