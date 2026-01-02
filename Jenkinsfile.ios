@@ -26,3 +26,28 @@ pipeline {
         stage('Verify Xcode') {
             steps {
                 sh 'xcode-select -p'
+                sh 'xcodebuild -version'
+            }
+        }
+
+        stage('Run WDIO iOS Tests') {
+            steps {
+                sh 'npx wdio config/wdio.ios.conf.ts'
+            }
+        }
+    }
+
+    post {
+        always {
+            // archive test reports (JUnit XML format)
+            archiveArtifacts artifacts: '**/reports/*.xml', allowEmptyArchive: true
+            junit '**/reports/*.xml'
+        }
+        failure {
+            echo 'iOS tests failed!'
+        }
+        success {
+            echo 'iOS tests passed successfully!'
+        }
+    }
+}
