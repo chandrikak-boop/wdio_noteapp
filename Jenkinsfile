@@ -34,7 +34,7 @@ pipeline {
 
     stage('Run WDIO Tests') {
       steps {
-        sh 'npx wdio config/wdio.ios.conf.ts'
+        sh 'npx wdio config/wdio.android.conf.ts'
       }
     }
   }
