@@ -1,4 +1,3 @@
-import { driver } from '@wdio/globals'
 import CreateListPage from '../../test/pageobjects/ios/createList.page'
 import AddItemsPage from '../../test/pageobjects/ios/addItems.page'
 const testData = require("../../data/ios_testdata.json");
