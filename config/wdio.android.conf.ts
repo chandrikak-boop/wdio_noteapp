@@ -24,7 +24,7 @@ import {config} from './wdio.conf.ts';
     // of the config file unless it's absolute.
     //
     config.specs = [
-        '../test/specs/notes_android.spec.ts'
+        '../test/specs/android_notes.spec.ts','../test/specs/android_checklist.spec.ts'
     ],
     
 

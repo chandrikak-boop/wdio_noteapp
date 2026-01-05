@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="Notes App POM separation" timestamp="2026-01-05T12:28:16" time="13.853" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Notes App - POM separation"/>
+      <property name="capabilities" value="android.emulator-5554"/>
+      <property name="file" value="file://./test/specs/android_notes.spec.ts"/>
+    </properties>
+    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Skip tutorial" time="2.007">
+      <system-out><![CDATA[
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025d-ffff-ffff0000008f/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+]]></system-out>
+    </testcase>
+    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Add a text note" time="5.941">
+      <system-out><![CDATA[
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025c-ffff-ffff0000005b/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025e-ffff-ffff000000ae/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Editing\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Editing\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"xpath","value":"//*[@text=\"Editing\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Editing\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
+RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025f-ffff-ffff000000d6/clear - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025f-ffff-ffff000000d6/value - {"text":"Test Note"}
+RESULT: {"text":"Test Note"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_note\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_note\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025f-ffff-ffff000000e7/clear - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025f-ffff-ffff000000e7/value - {"text":"This is a test note for Android app testing."}
+RESULT: {"text":"This is a test note for Android app testing."}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/back - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/back - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+]]></system-out>
+    </testcase>
+    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Delete the note" time="5.902">
+      <system-out><![CDATA[
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025c-ffff-ffff000000f6/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//android.widget.ImageButton[@content-desc=\"More\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.ImageButton[@content-desc=\"More\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-0261-ffff-ffff0000013f/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Delete\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Delete\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-0262-ffff-ffff00000175/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@resource-id=\"android:id/button1\"]"}
+RESULT: {"using":"xpath","value":"//*[@resource-id=\"android:id/button1\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-0263-ffff-ffff0000018e/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//android.widget.ImageButton[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/icon_nav\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.ImageButton[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/icon_nav\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025c-ffff-ffff00000011/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Trash Can\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Trash Can\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025c-ffff-ffff0000019b/click - {}
+RESULT: {}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+COMMAND: DELETE /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,5 +1,5 @@
-import AddNotePage from '../../test/pageobjects/android/addNote.page'
-import DeleteNotePage from '../../test/pageobjects/android/deleteNote.page'
+import AddNotePage from '../pageobjects/android/addNote.page'
+import DeleteNotePage from '../pageobjects/android/deleteNote.page'
 //import testData from '../../data/android_testdata.json'
 const testData = require("../../data/android_testdata.json");
 

@@ -26,7 +26,7 @@ export const config: WebdriverIO.Config = {
     
     }],
 
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
