@@ -1,8 +1,6 @@
 pipeline {
   agent any
-triggers {
-  cron('TZ=Asia/Kolkata\n0 13 * * *')
-    }
+  
   tools {
     nodejs 'node20'
   }

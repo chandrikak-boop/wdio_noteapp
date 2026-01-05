@@ -1,9 +1,5 @@
 pipeline {
     agent any
-
-    triggers {
-  cron('TZ=Asia/Kolkata\n0 13 * * *')
-    }
     stages {
         stage('Checkout SCM') {
             steps {
