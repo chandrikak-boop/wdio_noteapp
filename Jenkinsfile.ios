@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     triggers {
-        githubPush()
+  cron('TZ=Asia/Kolkata\n0 13 * * *')
     }
     stages {
         stage('Checkout SCM') {

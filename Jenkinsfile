@@ -1,10 +1,8 @@
 pipeline {
   agent any
-
-   triggers {
-    githubPush()
-  }
-  
+triggers {
+  cron('TZ=Asia/Kolkata\n0 13 * * *')
+    }
   tools {
     nodejs 'node20'
   }
