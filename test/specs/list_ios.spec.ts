@@ -6,7 +6,6 @@ const testData = require("../../data/ios_testdata.json");
 describe('iOS Test Suite - POM', () => {
 
     const listName = testData.listName
-    const items = testData.items
 
     it('Create a list', async () => {
         await CreateListPage.createList(listName)
@@ -14,10 +13,6 @@ describe('iOS Test Suite - POM', () => {
 
     it('Add items to list', async () => {
         await CreateListPage.openList(listName)
-
-        for (const item of items) {
-            await AddItemsPage.addItem(item)
-            await driver.pause(1000)
-        }
+        await AddItemsPage.addMultipleItems(testData.items)
     })
 })

@@ -1,129 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="4" failures="0" errors="0" skipped="0">
-  <testsuite name="Create Checklist" timestamp="2026-01-05T12:28:36" time="14.2" tests="4" failures="0" errors="0" skipped="0">
+<testsuites tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="Notes App POM separation" timestamp="2026-01-05T13:40:21" time="13.378" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Create Checklist"/>
+      <property name="suiteName" value="Notes App - POM separation"/>
       <property name="capabilities" value="android.emulator-5554"/>
-      <property name="file" value="file://./test/specs/android_checklist.spec.ts"/>
+      <property name="file" value="file://./test/specs/android_notes.spec.ts"/>
     </properties>
-    <testcase classname="android.emulator-5554.Create_Checklist" name="Skip tutorial" time="1.842">
+    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Skip tutorial" time="2.063">
       <system-out><![CDATA[
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"class name","value":"android.widget.Button"}
 RESULT: {"using":"class name","value":"android.widget.Button"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/elements - {"using":"class name","value":"android.widget.Button"}
-RESULT: {"using":"class name","value":"android.widget.Button"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"class name","value":"android.widget.Button"}
-RESULT: {"using":"class name","value":"android.widget.Button"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"class name","value":"android.widget.Button"}
-RESULT: {"using":"class name","value":"android.widget.Button"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-026f-ffff-ffff0000008f/click - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02fa-ffff-ffff0000008f/click - {}
 RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/elements - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/elements - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
 ]]></system-out>
     </testcase>
-    <testcase classname="android.emulator-5554.Create_Checklist" name="Add a checklist" time="1.983">
+    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Add a text note" time="5.996">
       <system-out><![CDATA[
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/elements - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/main_btn1\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-026e-ffff-ffff00000016/click - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02f9-ffff-ffff0000005b/click - {}
 RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Checklist\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Checklist\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/elements - {"using":"xpath","value":"//*[@text=\"Checklist\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Checklist\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Checklist\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Checklist\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Checklist\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Checklist\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0270-ffff-ffff000000b1/click - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/elements - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02fb-ffff-ffff000000ae/click - {}
 RESULT: {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@text=\"Editing\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Editing\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/elements - {"using":"xpath","value":"//*[@text=\"Editing\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Editing\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
+RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02fc-ffff-ffff000000d6/clear - {}
+RESULT: {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02fc-ffff-ffff000000d6/value - {"text":"Test Note"}
+RESULT: {"text":"Test Note"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_note\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_note\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02fc-ffff-ffff000000e7/clear - {}
+RESULT: {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02fc-ffff-ffff000000e7/value - {"text":"This is a test note for Android app testing."}
+RESULT: {"text":"This is a test note for Android app testing."}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/back - {}
+RESULT: {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/back - {}
+RESULT: {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/elements - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
 ]]></system-out>
     </testcase>
-    <testcase classname="android.emulator-5554.Create_Checklist" name="Edit checklist header" time="1.907">
+    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Delete the note" time="5.317">
       <system-out><![CDATA[
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-RESULT: {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/elements - {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-RESULT: {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-RESULT: {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-RESULT: {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0271-ffff-ffff000000cf/click - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02f9-ffff-ffff000000f6/click - {}
 RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-RESULT: {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0271-ffff-ffff000000cf/clear - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//android.widget.ImageButton[@content-desc=\"More\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.ImageButton[@content-desc=\"More\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02fe-ffff-ffff0000013f/click - {}
 RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0271-ffff-ffff000000cf/value - {"text":"My Checklist"}
-RESULT: {"text":"My Checklist"}
-]]></system-out>
-    </testcase>
-    <testcase classname="android.emulator-5554.Create_Checklist" name="Add items to checklist" time="8.462">
-      <system-out><![CDATA[
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Add Item\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Add Item\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/elements - {"using":"xpath","value":"//*[@text=\"Add Item\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Add Item\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Add Item\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Add Item\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Add Item\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Add Item\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0271-ffff-ffff000000ef/click - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@text=\"Delete\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Delete\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02ff-ffff-ffff00000175/click - {}
 RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"class name","value":"android.widget.EditText"}
-RESULT: {"using":"class name","value":"android.widget.EditText"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0272-ffff-ffff000000f6/clear - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@resource-id=\"android:id/button1\"]"}
+RESULT: {"using":"xpath","value":"//*[@resource-id=\"android:id/button1\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-0300-ffff-ffff0000018e/click - {}
 RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0272-ffff-ffff000000f6/value - {"text":"Item 1"}
-RESULT: {"text":"Item 1"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"NEXT\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"NEXT\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0272-ffff-ffff00000119/click - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//android.widget.ImageButton[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/icon_nav\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.ImageButton[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/icon_nav\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02f9-ffff-ffff00000011/click - {}
 RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"class name","value":"android.widget.EditText"}
-RESULT: {"using":"class name","value":"android.widget.EditText"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0273-ffff-ffff0000011e/clear - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@text=\"Trash Can\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Trash Can\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element/00000000-0000-02f9-ffff-ffff0000019b/click - {}
 RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0273-ffff-ffff0000011e/value - {"text":"Item 2"}
-RESULT: {"text":"Item 2"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"NEXT\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"NEXT\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0273-ffff-ffff00000141/click - {}
-RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"class name","value":"android.widget.EditText"}
-RESULT: {"using":"class name","value":"android.widget.EditText"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0274-ffff-ffff00000146/clear - {}
-RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0274-ffff-ffff00000146/value - {"text":"Item 3"}
-RESULT: {"text":"Item 3"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"OK\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"OK\"]"}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0274-ffff-ffff0000016c/click - {}
-RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Item 1\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Item 1\"]"}
-COMMAND: GET /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0271-ffff-ffff0000014e/displayed - {}
-RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Item 2\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Item 2\"]"}
-COMMAND: GET /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0271-ffff-ffff00000126/displayed - {}
-RESULT: {}
-COMMAND: POST /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element - {"using":"xpath","value":"//*[@text=\"Item 3\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Item 3\"]"}
-COMMAND: GET /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471/element/00000000-0000-0271-ffff-ffff000000fe/displayed - {}
-RESULT: {}
-COMMAND: DELETE /session/fae66c4e-a7de-4f7d-b2bd-508b52ed0471 - {}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+COMMAND: POST /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec/elements - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
+COMMAND: DELETE /session/134e24c3-cfca-49fe-977e-f7dd9f2b1dec - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

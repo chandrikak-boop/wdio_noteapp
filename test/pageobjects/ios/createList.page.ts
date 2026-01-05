@@ -19,6 +19,7 @@ class CreateListPage {
     }
 
     async createList(listName: string) {
+        await this.createListBtn.waitForExist({ timeout: 5000 });
         await this.createListBtn.click()
         await this.listNameInput.addValue(listName)
         await this.createBtn.click()

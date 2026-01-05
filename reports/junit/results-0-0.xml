@@ -1,97 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="3" failures="0" errors="0" skipped="0">
-  <testsuite name="Notes App POM separation" timestamp="2026-01-05T12:28:16" time="13.853" tests="3" failures="0" errors="0" skipped="0">
+<testsuites tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="iOS Test Suite POM" timestamp="2026-01-05T16:19:29" time="21.677" tests="2" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Notes App - POM separation"/>
-      <property name="capabilities" value="android.emulator-5554"/>
-      <property name="file" value="file://./test/specs/android_notes.spec.ts"/>
+      <property name="suiteName" value="iOS Test Suite - POM"/>
+      <property name="capabilities" value="ios.iphone16"/>
+      <property name="file" value="file://./test/specs/list_ios.spec.ts"/>
     </properties>
-    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Skip tutorial" time="2.007">
+    <testcase classname="ios.iphone16.iOS_Test_Suite_-_POM" name="Create a list" time="3.739">
       <system-out><![CDATA[
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"class name","value":"android.widget.Button"}
-RESULT: {"using":"class name","value":"android.widget.Button"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025d-ffff-ffff0000008f/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/elements - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/12000000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeTextField"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeTextField"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/13000000-0000-0000-F135-010000000000/value - {"text":"Test List"}
+RESULT: {"text":"Test List"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"accessibility id","value":"Create"}
+RESULT: {"using":"accessibility id","value":"Create"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/75000000-0000-0000-F135-010000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/elements - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
 ]]></system-out>
     </testcase>
-    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Add a text note" time="5.941">
+    <testcase classname="ios.iphone16.iOS_Test_Suite_-_POM" name="Add items to list" time="17.934">
       <system-out><![CDATA[
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Add note\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Add note\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025c-ffff-ffff0000005b/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/8F000000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Text\")"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025e-ffff-ffff000000ae/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/99000000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Editing\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Editing\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"xpath","value":"//*[@text=\"Editing\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Editing\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-RESULT: {"using":"xpath","value":"//*[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_title\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025f-ffff-ffff000000d6/clear - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Title\"]"}
+RESULT: {"using":"xpath","value":"//*[@value=\"Title\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/A0000000-0000-0000-F135-010000000000/value - {"text":"Pay Electricity Bill"}
+RESULT: {"text":"Pay Electricity Bill"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Due\"]"}
+RESULT: {"using":"xpath","value":"//*[@value=\"Due\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/E2000000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025f-ffff-ffff000000d6/value - {"text":"Test Note"}
-RESULT: {"text":"Test Note"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_note\"]"}
-RESULT: {"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/edit_note\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025f-ffff-ffff000000e7/clear - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/E4000000-0000-0000-F135-010000000000/text - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025f-ffff-ffff000000e7/value - {"text":"This is a test note for Android app testing."}
-RESULT: {"text":"This is a test note for Android app testing."}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/back - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
+RESULT: {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/F2000000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/back - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/E4000000-0000-0000-F135-010000000000/text - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-]]></system-out>
-    </testcase>
-    <testcase classname="android.emulator-5554.Notes_App_-_POM_separation" name="Delete the note" time="5.902">
-      <system-out><![CDATA[
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025c-ffff-ffff000000f6/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
+RESULT: {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/F2000000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//android.widget.ImageButton[@content-desc=\"More\"]"}
-RESULT: {"using":"xpath","value":"//android.widget.ImageButton[@content-desc=\"More\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-0261-ffff-ffff0000013f/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/E4000000-0000-0000-F135-010000000000/text - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Delete\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Delete\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-0262-ffff-ffff00000175/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"15\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"15\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/29020000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@resource-id=\"android:id/button1\"]"}
-RESULT: {"using":"xpath","value":"//*[@resource-id=\"android:id/button1\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-0263-ffff-ffff0000018e/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/CC000000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//android.widget.ImageButton[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/icon_nav\"]"}
-RESULT: {"using":"xpath","value":"//android.widget.ImageButton[@resource-id=\"com.socialnmobile.dictapps.notepad.color.note:id/icon_nav\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025c-ffff-ffff00000011/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/99000000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Trash Can\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Trash Can\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element/00000000-0000-025c-ffff-ffff0000019b/click - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Title\"]"}
+RESULT: {"using":"xpath","value":"//*[@value=\"Title\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/4D020000-0000-0000-F135-010000000000/value - {"text":"Buy Groceries"}
+RESULT: {"text":"Buy Groceries"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Due\"]"}
+RESULT: {"using":"xpath","value":"//*[@value=\"Due\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/8F020000-0000-0000-F135-010000000000/click - {}
 RESULT: {}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/element - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-COMMAND: POST /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08/elements - {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-RESULT: {"using":"xpath","value":"//*[@text=\"Test Note\"]"}
-COMMAND: DELETE /session/b627c3c6-2d5e-4b1a-a178-476142ca1d08 - {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/91020000-0000-0000-F135-010000000000/text - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"25\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"25\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/2D030000-0000-0000-F135-010000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/79020000-0000-0000-F135-010000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/99000000-0000-0000-F135-010000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Title\"]"}
+RESULT: {"using":"xpath","value":"//*[@value=\"Title\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/43030000-0000-0000-F135-010000000000/value - {"text":"Read a Book"}
+RESULT: {"text":"Read a Book"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Due\"]"}
+RESULT: {"using":"xpath","value":"//*[@value=\"Due\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/85030000-0000-0000-F135-010000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/87030000-0000-0000-F135-010000000000/text - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
+RESULT: {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/95030000-0000-0000-F135-010000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
+COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/87030000-0000-0000-F135-010000000000/text - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"10\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"10\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/07040000-0000-0000-F135-010000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
+COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/6F030000-0000-0000-F135-010000000000/click - {}
+RESULT: {}
+COMMAND: DELETE /session/b7ab755f-b650-461a-a647-5405af5be9e5 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
