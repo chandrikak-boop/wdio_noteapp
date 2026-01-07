@@ -34,7 +34,9 @@ pipeline {
 
     stage('Run WDIO Tests') {
       steps {
+        lock('ios-device') {
         sh 'npx wdio config/wdio.android.conf.ts'
+        }
       }
     }
   }
