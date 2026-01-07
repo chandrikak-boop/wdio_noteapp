@@ -39,7 +39,7 @@ pipeline {
 
         stage('Run WDIO iOS Tests') {
             steps {
-                lock('android-device') {
+                
                 sh '''
                 # Make sure Node & npm are available in this shell too
                 export NVM_DIR="$HOME/.nvm"
@@ -49,7 +49,6 @@ pipeline {
                 # Run your WDIO tests
                 npx wdio config/wdio.ios.conf.ts
                 '''
-            }
             }
         }
     }
