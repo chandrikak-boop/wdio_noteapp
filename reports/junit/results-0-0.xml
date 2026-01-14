@@ -1,141 +1,491 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="2" failures="0" errors="0" skipped="0">
-  <testsuite name="iOS Test Suite POM" timestamp="2026-01-05T16:19:29" time="21.677" tests="2" failures="0" errors="0" skipped="0">
+<testsuites tests="5" failures="0" errors="0" skipped="0">
+  <testsuite name="payment flow" timestamp="2026-01-14T21:38:54" time="65.29" tests="5" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="iOS Test Suite - POM"/>
-      <property name="capabilities" value="ios.iphone16"/>
-      <property name="file" value="file://./test/specs/list_ios.spec.ts"/>
+      <property name="suiteName" value="payment flow"/>
+      <property name="capabilities" value="android.emulator-5556"/>
+      <property name="file" value="file://./test/specs/stripe/paymentFlow.spec.ts"/>
     </properties>
-    <testcase classname="ios.iphone16.iOS_Test_Suite_-_POM" name="Create a list" time="3.739">
+    <testcase classname="android.emulator-5556.payment_flow" name="valid scenario" time="18.421">
       <system-out><![CDATA[
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/elements - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Create list\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/12000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f0-0000-000d0000000b/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeTextField"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeTextField"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/13000000-0000-0000-F135-010000000000/value - {"text":"Test List"}
-RESULT: {"text":"Test List"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"accessibility id","value":"Create"}
-RESULT: {"using":"accessibility id","value":"Create"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/75000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f1-3b9a-ca4b00000017/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/elements - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: GET /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f2-0000-008800000027/displayed - {}
+RESULT: {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f2-0000-008800000027/click - {}
+RESULT: {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(0)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(0)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f2-0000-00da00000027/value - {"text":"4242424242424242"}
+RESULT: {"text":"4242424242424242"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(1)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(1)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f2-0000-00ef00000027/value - {"text":"1226"}
+RESULT: {"text":"1226"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(2)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(2)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f2-0000-00fa00000027/value - {"text":"112"}
+RESULT: {"text":"112"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(4)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(4)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f2-0000-011c00000027/value - {"text":"12345"}
+RESULT: {"text":"12345"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.CheckBox\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.CheckBox\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f2-3b9a-cb2600000027/click - {}
+RESULT: {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.Button[@resource-id=\"com.stripe.android.paymentsheet.example:id/primary_button\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@resource-id=\"com.stripe.android.paymentsheet.example:id/primary_button\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f2-ffff-ffff0000002b/click - {}
+RESULT: {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Success\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Finish\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Finish\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f4-0000-01380000003d/click - {}
+RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="ios.iphone16.iOS_Test_Suite_-_POM" name="Add items to list" time="17.934">
+    <testcase classname="android.emulator-5556.payment_flow" name="Invalid card number" time="10.8">
       <system-out><![CDATA[
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Test List\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/8F000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f0-0000-000d0000000b/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/99000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f5-3b9a-cb5900000049/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Title\"]"}
-RESULT: {"using":"xpath","value":"//*[@value=\"Title\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/A0000000-0000-0000-F135-010000000000/value - {"text":"Pay Electricity Bill"}
-RESULT: {"text":"Pay Electricity Bill"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Due\"]"}
-RESULT: {"using":"xpath","value":"//*[@value=\"Due\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/E2000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f6-0000-019600000059/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/E4000000-0000-0000-F135-010000000000/text - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(0)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(0)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f6-0000-01e800000059/value - {"text":"4242424242424241"}
+RESULT: {"text":"4242424242424241"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's number is invalid.\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's number is invalid.\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's number is invalid.\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's number is invalid.\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
-RESULT: {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/F2000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/E4000000-0000-0000-F135-010000000000/text - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
-RESULT: {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/F2000000-0000-0000-F135-010000000000/click - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="android.emulator-5556.payment_flow" name="Invalid expiry date" time="12.163">
+      <system-out><![CDATA[
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f0-0000-000d0000000b/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/E4000000-0000-0000-F135-010000000000/text - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f7-3b9a-ccb90000006d/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"15\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"15\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/29020000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f8-0000-02f60000007d/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/CC000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(0)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(0)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f8-0000-03480000007d/value - {"text":"4242424242424242"}
+RESULT: {"text":"4242424242424242"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(1)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(1)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f8-0000-035d0000007d/value - {"text":"1225"}
+RESULT: {"text":"1225"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's expiration year is invalid.\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's expiration year is invalid.\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's expiration year is invalid.\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's expiration year is invalid.\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/99000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Title\"]"}
-RESULT: {"using":"xpath","value":"//*[@value=\"Title\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/4D020000-0000-0000-F135-010000000000/value - {"text":"Buy Groceries"}
-RESULT: {"text":"Buy Groceries"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Due\"]"}
-RESULT: {"using":"xpath","value":"//*[@value=\"Due\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/8F020000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/91020000-0000-0000-F135-010000000000/text - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="android.emulator-5556.payment_flow" name="Invalid cvc" time="12.533">
+      <system-out><![CDATA[
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f0-0000-000d0000000b/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"25\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"25\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/2D030000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f9-3b9a-ce1900000091/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/79020000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01fa-0000-0456000000a1/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Add\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/99000000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(0)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(0)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01fa-0000-04a8000000a1/value - {"text":"4242424242424242"}
+RESULT: {"text":"4242424242424242"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(1)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(1)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01fa-0000-04bd000000a1/value - {"text":"1226"}
+RESULT: {"text":"1226"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(2)"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.EditText\").instance(2)"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01fa-0000-04c8000000a1/value - {"text":"11"}
+RESULT: {"text":"11"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.Button[@resource-id=\"com.stripe.android.paymentsheet.example:id/primary_button\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@resource-id=\"com.stripe.android.paymentsheet.example:id/primary_button\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01fa-ffff-ffff000000a5/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Title\"]"}
-RESULT: {"using":"xpath","value":"//*[@value=\"Title\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/43030000-0000-0000-F135-010000000000/value - {"text":"Read a Book"}
-RESULT: {"text":"Read a Book"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//*[@value=\"Due\"]"}
-RESULT: {"using":"xpath","value":"//*[@value=\"Due\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/85030000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's security code is invalid.\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's security code is invalid.\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's security code is invalid.\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"Your card's security code is invalid.\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/87030000-0000-0000-F135-010000000000/text - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
-RESULT: {"using":"-ios predicate string","value":"name == \"DatePicker.NextMonth\""}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/95030000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Month\"]"}
-COMMAND: GET /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/87030000-0000-0000-F135-010000000000/text - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="android.emulator-5556.payment_flow" name="Blank card number" time="11.364">
+      <system-out><![CDATA[
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"PaymentSheet\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01f0-0000-000d0000000b/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"10\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"10\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/07040000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"class name","value":"android.widget.Button"}
+RESULT: {"using":"class name","value":"android.widget.Button"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01fb-3b9a-cf7a000000b5/click - {}
 RESULT: {}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element - {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
-RESULT: {"using":"xpath","value":"//XCUIElementTypeButton[@name=\"Create\"]"}
-COMMAND: POST /session/b7ab755f-b650-461a-a647-5405af5be9e5/element/6F030000-0000-0000-F135-010000000000/click - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.TextView[@text=\"Card\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01fc-0000-05b7000000c5/click - {}
 RESULT: {}
-COMMAND: DELETE /session/b7ab755f-b650-461a-a647-5405af5be9e5 - {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"xpath","value":"//android.widget.Button[@resource-id=\"com.stripe.android.paymentsheet.example:id/primary_button\"]"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@resource-id=\"com.stripe.android.paymentsheet.example:id/primary_button\"]"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element/00000000-0000-01fc-ffff-ffff000000c9/click - {}
+RESULT: {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/element - {"using":"-android uiautomator","value":"new UiSelector().text(\"This field cannot be blank.\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"This field cannot be blank.\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/elements - {"using":"-android uiautomator","value":"new UiSelector().text(\"This field cannot be blank.\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().text(\"This field cannot be blank.\")"}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
+RESULT: {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
+RESULT: {}
+COMMAND: POST /session/fbd27688-b089-4b65-90f3-eef60794c449/back - {}
+RESULT: {}
+COMMAND: DELETE /session/fbd27688-b089-4b65-90f3-eef60794c449 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

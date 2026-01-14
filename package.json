@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/node": "^25.0.3",
     "@wdio/allure-reporter": "^9.22.0",
-    "@wdio/appium-service": "^9.22.0",
+    "@wdio/appium-service": "^9.23.0",
     "@wdio/browserstack-service": "^9.22.0",
     "@wdio/cli": "^9.22.0",
     "@wdio/globals": "^9.17.0",
